@@ -1,42 +1,39 @@
-# Contributing to the xFormers repo
+# Contributing to the xFormers Repository
 
-We want to make contributing to this project as easy and transparent as
-possible.
+We aim to make contributing to this project as easy and transparent as possible.
 
 ## Our Development Process
 
-Minor changes and improvements will be released on an ongoing basis. Larger
-changes (e.g., changesets implementing a new paper) will be released on a
-more periodic basis.
+Minor changes and improvements will be released on an ongoing basis, while larger
+changes (e.g., changesets implementing a new paper) will be released more periodically.
 
 ## Pull Requests
 
-We actively welcome your pull requests.
+We enthusiastically welcome your pull requests.
 
-1. Fork the repo and create your branch from `main`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
+1. Fork the repository and create your branch from the `main` branch.
+2. If you've added code that needs testing, please include relevant tests.
+3. If you've made changes to APIs, ensure that the documentation is updated.
+4. Confirm that the test suite passes.
+5. Make sure your code adheres to the coding style guidelines.
 6. If you haven't already, complete the Contributor License Agreement ("CLA").
 
 ## Contributor License Agreement ("CLA")
 
-In order to accept your pull request, we need you to submit a CLA. You only need
-to do this once to work on any of Facebook's open source projects.
+To accept your pull request, we require you to submit a CLA.
+This is a one-time requirement to work on any of Facebook's open source projects.
 
-Complete your CLA here: <https://code.facebook.com/cla>
+Complete your CLA [here](https://code.facebook.com/cla).
 
 ## Issues
 
-We use GitHub issues to track public bugs. Please ensure your description is
-clear and has sufficient instructions to be able to reproduce the issue.
+We use GitHub issues to track public bugs. Please ensure your issue description is clear
+and includes sufficient instructions for reproducing the problem.
 
-Facebook has a [bounty program](https://www.facebook.com/whitehat/) for the safe
-disclosure of security bugs. In those cases, please go through the process
-outlined on that page and do not file a public issue.
+Facebook offers a [bounty program](https://www.facebook.com/whitehat/) for the safe disclosure of security bugs. 
+In such cases, please follow the process outlined on that page and refrain from filing a public issue.
 
-## Environment setup
+## Environment Setup
 
 ```bash
 ~$ python3 -m venv venv2
@@ -48,9 +45,9 @@ outlined on that page and do not file a public issue.
 ## Coding Style
 
 In your editor, install the [editorconfig](https://editorconfig.org/) extension
-which should ensure that you are following the same standards as us.
+to ensure that you are following the same standards as us.
 
-Two options to make sure that the code is formatted and linted properly:
+There are two options to guarantee proper code formatting and linting:
 * either you run black, mypy and isort before opening up your PR.
 
 ```bash
@@ -60,8 +57,8 @@ flake8 --config .flake8
 mypy --ignore-missing-imports --scripts-are-modules --pretty --exclude build/ --exclude stubs/ .
 ```
 
-* or you can just install [pre-commit](https://pre-commit.com/), which will make sure that all of the above is run automatically anytime you commit 
-in that case, you would need to 
+* Alternatively, you can just install [pre-commit](https://pre-commit.com/), which automatically runs these checks every time you commit.  
+To set it up: 
 ```bash
 pip install pre-commit 
 ```
@@ -72,7 +69,7 @@ pre-commit install
 
 After these steps each of your commits will run the same linting and formatting routines as the xformers continuous integration, which greatly helps getting your PRs all green !
 
-_Read the [editorconfig](.editorconfig) file to understand the exact coding style preferences._
+_Read the [editorconfig](.editorconfig) file to understand the exact coding style preferences in detail._
 
 ## Testing
 
@@ -102,8 +99,8 @@ python -m pytest --cov-report term --cov=template  tests
 
 ### CircleCI status
 
-From your PR page, you can expand on the CircleCI results. For GPU test, you should see
-what CI has run, like:
+From your PR page, you can review the CircleCI results. For GPU tests, you should see 
+output like:
 
 ``` bash
 ...
@@ -112,8 +109,8 @@ what CI has run, like:
 CircleCI received exit code 0
 ```
 
-The number of passed and failed should give you an idea on whether your local
-test was the same or not.
+The number of passed and failed tests should give you an idea of whether your local tests
+match with the CI results.
 
 ## Commit Guidelines
 
@@ -145,7 +142,7 @@ Must be one of the following:
 * **test**: Adding missing tests or fixing them
 * **chore**: Changes to the build process or auxiliary tools and libraries such as documentation
 generation
-* **docs**: Documentation only changes
+* **docs**: Documentation-only changes
 
 ## License
 
